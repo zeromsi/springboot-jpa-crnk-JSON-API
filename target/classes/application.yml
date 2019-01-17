@@ -1,0 +1,21 @@
+crnk:
+  domainName: http://localhost:9090
+  jpa:
+    exposeAll: false
+  pathPrefix: /api
+  resourcePackage: com.codenotfound.crnk.domain
+  
+server:
+  context-path: /
+  port: 9090
+  
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/crnk
+    username: root
+    password:
+  jpa:
+    hibernate.ddl-auto: create-drop
+    generate-ddl: true
+    show-sql: true
